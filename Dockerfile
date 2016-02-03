@@ -7,6 +7,11 @@ ENV GOPATH /root/go
 ENV GOROOT /usr/local/go
 ENV PATH $PATH:$GOPATH/bin:$GOROOT/bin
 
+RUN locale-gen en_US.UTF-8  
+ENV LANG en_US.UTF-8  
+ENV LANGUAGE en_US:en  
+ENV LC_ALL en_US.UTF-8  
+
 # Environment for Golang
 RUN mkdir -p $GOPATH
 RUN mkdir -p $GOPATH/bin
