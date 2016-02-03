@@ -1,7 +1,9 @@
-### How-to
+### How-To
 
 ```
-docker build . -t hitripod/docker-ubuntu-dev
+docker build . -t kordan/ubuntu:16.04
+docker run -itd --name ubuntu kordan/ubuntu:16.04
+docker exec -it ubuntu zsh
 ```
 
 ### Reference
